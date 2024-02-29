@@ -1,7 +1,8 @@
 vim.g.mapleader = " "
 vim.opt.clipboard = "unnamedplus"
-vim.g.tabstop = 4
+vim.g.tabstop = 2
 vim.opt.number = true
+vim.opt.cmdheight = 0
 vim.opt.undofile = true
 vim.keymap.set('n', 'x', '"_x')
 vim.keymap.set('n', 'c', '"_c')
