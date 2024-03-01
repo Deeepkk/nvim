@@ -27,10 +27,12 @@ return {
 
 	},
 	{
-		"zbirenbaum/copilot-cmp",
+		"github/copilot.vim",
 		config = function()
-			require("copilot_cmp").setup()
+			require("copilot").setup()
+			vim.g.copilot_autostart = 1
 		end
+
 	},
 	{
 		'hrsh7th/nvim-cmp',
@@ -46,8 +48,8 @@ return {
 					completion = cmp.config.window.bordered(),
 				},
 				mapping = cmp.mapping.preset.insert({
-					["<Tab>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
-					["<S-Tab>"] = cmp.mapping.select_prev_item({
+					["<Down>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
+					["<Up>"] = cmp.mapping.select_prev_item({
 						behavior = cmp.SelectBehavior
 						    .Insert
 					}),
@@ -57,7 +59,6 @@ return {
 					{ name = "nvim_lsp" },
 					{ name = "luasnip" },
 					{ name = "buffer" },
-					{ name = "copilot" },
 					{ name = "path" },
 				},
 			})

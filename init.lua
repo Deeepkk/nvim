@@ -11,6 +11,9 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 vim.opt.fillchars = { eob = " " }
 vim.keymap.set('n', '<C-s>', '<cmd>w<CR>')
+vim.filetype.add({ extension = { templ = "templ" } })
+
+
 
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
