@@ -11,6 +11,7 @@ vim.opt.termguicolors = true
 vim.opt.fillchars = { eob = " " }
 vim.keymap.set('n', '<C-s>', '<cmd>w<CR>')
 vim.filetype.add({ extension = { templ = "templ" } })
+vim.keymap.set('n', '<C-p>', '<cmd>bp<CR>')
 
 
 
