@@ -16,20 +16,13 @@ return {
 		end,
 	},
 	{
-		"zbirenbaum/copilot.lua",
-		cmd = "Copilot",
-		event = "InsertEnter",
-		config = function()
-			require("copilot").setup()
-		end
-
-	},
-	{
 		"github/copilot.vim",
 		config = function()
-			require("copilot").setup()
 			vim.g.copilot_autostart = 1
-		end
+			vim.g.copilot_no_tab_map = true
+			vim.g.copilot_assume_mapped = true
+			vim.api.nvim_set_keymap("i", "<C-.>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
+		end,
 
 	},
 	{
@@ -46,8 +39,8 @@ return {
 					completion = cmp.config.window.bordered(),
 				},
 				mapping = cmp.mapping.preset.insert({
-					["<Down>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
-					["<Up>"] = cmp.mapping.select_prev_item({
+					["<tab>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
+					["<S-tab>"] = cmp.mapping.select_prev_item({
 						behavior = cmp.SelectBehavior
 						    .Insert
 					}),
