@@ -10,7 +10,7 @@ return {
 			fg = "#abb2bf",
 			bg = "#1e2024",
 			green = "#37d99e",
-			yellow = "#ffe59e",
+			teal = "#63b3ad",
 			purple = "#c397d8",
 			orange = "#f0a988",
 			peanut = "#f6d5a4",
@@ -23,7 +23,7 @@ return {
 		local vi_mode_colors = {
 			NORMAL = "green",
 			OP = "green",
-			INSERT = "yellow",
+			INSERT = "teal",
 			VISUAL = "purple",
 			LINES = "orange",
 			BLOCK = "dark_red",
@@ -113,7 +113,7 @@ return {
 			diagnostic_warnings = {
 				provider = "diagnostic_warnings",
 				hl = {
-					fg = "yellow",
+					fg = "teal",
 				},
 			},
 			diagnostic_hints = {
@@ -184,7 +184,7 @@ return {
 			scroll_bar = {
 				provider = "scroll_bar",
 				hl = {
-					fg = "yellow",
+					fg = "teal",
 					style = "bold",
 				},
 			},
