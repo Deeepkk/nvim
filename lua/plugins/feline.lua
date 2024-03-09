@@ -9,15 +9,15 @@ return {
 		local one_monokai = {
 			fg = "#abb2bf",
 			bg = "#1e2024",
-			green = "#98c379",
-			yellow = "#e5c07b",
-			purple = "#c678dd",
-			orange = "#d19a66",
+			green = "#37d99e",
+			yellow = "#ffe59e",
+			purple = "#c397d8",
+			orange = "#f0a988",
 			peanut = "#f6d5a4",
-			red = "#e06c75",
-			aqua = "#61afef",
+			red = "#f87070",
+			aqua = "#50cad2",
 			darkblue = "#282c34",
-			dark_red = "#f75f5f",
+			dark_red = "#e87979",
 		}
 
 		local vi_mode_colors = {
