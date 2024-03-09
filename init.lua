@@ -8,7 +8,6 @@ vim.keymap.set('n', 'c', '"_c')
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
-vim.opt.fillchars = { eob = " " }
 vim.keymap.set('n', '<C-s>', '<cmd>w<CR>')
 -- pane navigation
 vim.keymap.set('n', '<C-h>', '<C-w>h')
