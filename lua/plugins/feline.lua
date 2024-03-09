@@ -6,7 +6,7 @@ return {
 			return
 		end
 
-		local one_monokai = {
+		local radium = {
 			fg = "#abb2bf",
 			bg = "#1e2024",
 			green = "#37d99e",
@@ -86,7 +86,7 @@ return {
 					bg = "darkblue",
 				},
 				left_sep = "block",
-				right_sep = "right_filled",
+				right_sep = "block",
 			},
 			separator = {
 				provider = "",
@@ -132,7 +132,7 @@ return {
 					bg = "darkblue",
 					style = "bold",
 				},
-				left_sep = "left_filled",
+				left_sep = "block",
 				right_sep = "block",
 			},
 			file_type = {
@@ -192,19 +192,19 @@ return {
 
 		local left = {
 			c.vim_mode,
-			c.gitBranch,
-			c.gitDiffAdded,
-			c.gitDiffRemoved,
-			c.gitDiffChanged,
-			c.separator,
-		}
-
-		local middle = {
 			c.fileinfo,
 			c.diagnostic_errors,
 			c.diagnostic_warnings,
 			c.diagnostic_info,
 			c.diagnostic_hints,
+		}
+
+		local middle = {
+			c.gitBranch,
+			c.gitDiffAdded,
+			c.gitDiffRemoved,
+			c.gitDiffChanged,
+			c.separator,
 		}
 
 		local right = {
@@ -228,7 +228,7 @@ return {
 
 		feline.setup({
 			components = components,
-			theme = one_monokai,
+			theme = radium,
 			vi_mode_colors = vi_mode_colors,
 		})
 	end,
