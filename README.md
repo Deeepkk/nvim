@@ -1,1 +1,1 @@
-![image](https://github.com/Deeepkk/nvim/assets/92260620/11e66f6f-1be0-4057-b063-250edc732413)
+![image](https://github.com/Deeepkk/nvim/assets/92260620/a60b133d-a666-4920-af4b-6f1bd53476bd)
