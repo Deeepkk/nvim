@@ -13,7 +13,7 @@ return {
 			teal = "#63b3ad",
 			purple = "#c397d8",
 			orange = "#f0a988",
-			peanut = "#f6d5a4",
+			blue = "#7ab0df",
 			red = "#f87070",
 			aqua = "#50cad2",
 			darkblue = "#282c34",
@@ -54,7 +54,7 @@ return {
 			gitBranch = {
 				provider = "git_branch",
 				hl = {
-					fg = "peanut",
+					fg = "blue",
 					bg = "darkblue",
 					style = "bold",
 				},
