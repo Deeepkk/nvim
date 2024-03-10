@@ -7,7 +7,10 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 vim.keymap.set('n', '<C-s>', '<cmd>w<CR>')
+-- words keymaps
 vim.keymap.set('n', 'dw', 'daw')
+vim.keymap.set('n', 'cw', 'ciw')
+vim.keymap.set('n', 'yw', 'yiw')
 -- move lines
 vim.keymap.set('n', 'mj', '<cmd>m .+1<CR>')
 vim.keymap.set('n', 'mk', '<cmd>m .-2<CR>')
