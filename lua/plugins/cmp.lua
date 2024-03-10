@@ -7,8 +7,8 @@ return {
 		'hrsh7th/nvim-cmp',
 		'L3MON4D3/LuaSnip',
 		'saadparwaiz1/cmp_luasnip',
-		"rafamadriz/friendly-snippets", },
-
+		"rafamadriz/friendly-snippets",
+	},
 	{
 		"L3MOn4D3/Luasnip",
 		config = function()
