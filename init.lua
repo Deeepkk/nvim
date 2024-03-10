@@ -3,18 +3,20 @@ vim.opt.clipboard = "unnamedplus"
 vim.g.tabstop = 2
 vim.opt.number = true
 vim.opt.undofile = true
-vim.keymap.set('n', 'x', '"_x')
-vim.keymap.set('n', 'c', '"_c')
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 vim.keymap.set('n', '<C-s>', '<cmd>w<CR>')
+vim.keymap.set('n', 'dw', 'daw')
+-- move lines
+vim.keymap.set('n', 'mj', '<cmd>m .+1<CR>')
+vim.keymap.set('n', 'mk', '<cmd>m .-2<CR>')
 -- pane navigation
 vim.keymap.set('n', '<C-h>', '<C-w>h')
 vim.keymap.set('n', '<C-j>', '<C-w>j')
 vim.keymap.set('n', '<C-k>', '<C-w>k')
 vim.keymap.set('n', '<C-l>', '<C-w>l')
-
+-- lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
 	vim.fn.system({
