@@ -11,6 +11,7 @@ vim.keymap.set('n', '<C-s>', '<cmd>w<CR>')
 vim.keymap.set('n', 'dw', 'daw')
 vim.keymap.set('n', 'cw', 'ciw')
 vim.keymap.set('n', 'yw', 'yiw')
+vim.keymap.set('n', 'vw', 'viw')
 -- move lines
 vim.keymap.set('n', 'mj', '<cmd>m .+1<CR>')
 vim.keymap.set('n', 'mk', '<cmd>m .-2<CR>')
