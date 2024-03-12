@@ -1,11 +1,12 @@
 return {
-
+	-- Git Lines & Signs
 	{
 		"lewis6991/gitsigns.nvim",
 		config = function ()
 			require('gitsigns').setup()
 		end
 	},
+	-- Git in Vim
 	{
 		"tpope/vim-fugitive",
 		config = function()

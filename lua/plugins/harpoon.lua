@@ -1,4 +1,5 @@
 return {
+	-- Navigation in Project
 	"ThePrimeagen/harpoon",
 	branch = "harpoon2",
 	dependencies = {

@@ -1,4 +1,5 @@
 return {
+	-- HEX & Other Color Highlighting
 	{
 		'NvChad/nvim-colorizer.lua',
 		config = function()
@@ -9,6 +10,7 @@ return {
 			})
 		end
 	},
+	-- TailwindCSS Highlighting
 	{
 		"roobert/tailwindcss-colorizer-cmp.nvim",
 		config = function()

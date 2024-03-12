@@ -1,9 +1,11 @@
 return {
+	-- LSP
 	{
 		"williamboman/mason.nvim",
 		"williamboman/mason-lspconfig.nvim",
 		"neovim/nvim-lspconfig",
 	},
+	-- LSP Installer
 	{
 		"williamboman/mason.nvim",
 		config = function()
@@ -18,6 +20,7 @@ return {
 			})
 		end
 	},
+	-- LSP Config
 	{
 		"williamboman/mason-lspconfig.nvim",
 		config = function()
@@ -31,6 +34,7 @@ return {
 			})
 		end
 	},
+	-- LSP Keymaps
 	{
 		"neovim/nvim-lspconfig",
 		config = function()
