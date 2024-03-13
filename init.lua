@@ -2,6 +2,7 @@ vim.g.mapleader = " "
 vim.opt.clipboard = "unnamedplus"
 vim.g.tabstop = 2
 vim.opt.number = true
+vim.opt.relativenumber = true
 vim.opt.undofile = true
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
